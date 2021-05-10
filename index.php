@@ -11,8 +11,11 @@
 <body>
 <form action="hello.php">
     <input type="text" name="login">
+    <br>
     <input type="password" name="password">
+    <br>
     <button>Войти</button>
+    <br>
 </form>
 </body>
 

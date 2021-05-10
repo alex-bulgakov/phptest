@@ -9,15 +9,11 @@
 </head>
 
 <body>
-  <ul>
-    <?php
-    for ($i = 1; $i < 5; $i++) {
-      echo "<li>$i * $i = " . ($i * $i) . "</li>";
-    }
-    ?>
-
-  </ul>
-
+<form action="hello.php">
+    <input type="text" name="login">
+    <input type="password" name="password">
+    <button>Войти</button>
+</form>
 </body>
 
 </html>

@@ -9,14 +9,22 @@
 </head>
 
 <body>
-<form action="hello.php">
+<?php if (!isset($_REQUEST['send'])) {?>
+<form action="<?=$_SERVER['SCRIPT_NAME'] ?>">
     <input type="text" name="login">
     <br>
     <input type="password" name="password">
     <br>
-    <button>Войти</button>
+    <button name="send">Войти</button>
     <br>
 </form>
+<?php } else {
+    if ($_REQUEST['login'] == 'alex' && $_REQUEST['password'] == '123') {
+        echo 'Добро пожаловать';
+    } else {
+        echo 'Неверный логин или пароль';
+    }
+} ?>
 </body>
 
 </html>
